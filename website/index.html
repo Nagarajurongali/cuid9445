@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #home{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .about{
+            
+            background-image: url('https://img.freepik.com/free-photo/top-view-transparent-leaves-with-orange-light_23-2149299400.jpg?t=st=1729835370~exp=1729838970~hmac=f4797abb56256c2e4d6c03ebe51463af43bb7353f92c003023589c26dd362117&w=740');
+            height: 600px;
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .about img{
+            opacity: 0.7;
+        }
+        .form{
+            background-color: aqua;
+            padding: 2%;
+        }
+        .form input{
+            border:none ;
+            background-color: aqua ;
+            border-bottom: 1px solid ;
+        }
+        .services{
+            display: flex;
+            justify-content: space-around;
+            padding: 5%;
+            background-color: antiquewhite;
+            flex-wrap: wrap;
+        }
+        #contact{
+            height: 400px;
+            display: flex;
+            justify-content: space-around;
+            padding: 5%;
+            background-color: rgb(207, 127, 23);
+        }
+        .up{
+            background-color: #B197FC;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+        #header{
+            position: sticky;
+            top: 0;
+        }
+      .contactmain{
+        height: 300px;
+        width: 300px;
+        border: 2px solid;
+        padding: 2%;
+      }
+      .child{
+        display: none;
+        height: 250px;
+        border: 2px solid white;
+      }
+      .contactmain:hover .child{
+        display: block;
+      }
+      p:hover{
+        background-color: red;
+      }
+      .servone{
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRerfiLOAaY89rmthdXJTBsIg3HV6YSi7hElR5EHCnU51tOBCQrAwyBGO78bLaMRodT1lk&usqp=CAU');
+        height: 300px;
+        width: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .servone h1{
+        display: none;
+    }
+    .servone:hover h1{
+        display: block;
+    }
+    .rotate{
+        height: 100px;
+        width: 100px;
+        background-color: blueviolet;
+    }
+    .rotate:hover{
+        background-color: orange;
+    }
+       
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <img src="" alt="">
+        <ul>
+            <a href="#" class="active"><li><i class="fa-solid fa-house-user"></i>Home</li></a>
+            <a href="./about.html"><li><i class="fa-brands fa-servicestack fa-beat" style="color: #B197FC;"></i>About</li></a>
+            <a href="#services"><li>Services</li></a>
+            <a href="#contact"><li>Contact</li></a>
+            <a href='./new.html'><li>Blog</li></a>
+        </ul>
+    </div>
+    <div class="rotate"></div>
+    <div id="home">
+        <div class="childone">
+            <img src='https://t3.ftcdn.net/jpg/06/15/49/68/360_F_615496890_W34yB8VDE6n5pehb5QCt1ek5oEvRo9qA.jpg' alt="">
+        </div>
+        <div class="childtwo">
+            <h1>This Is landing Page</h1>
+            <p>Dummy text dummy text</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+    
+    <div class="about" style="position: relative;">
+        <img src="https://img.freepik.com/premium-photo/abstract-background-vivid-purple-gold-texture_1088041-57368.jpg?semt=ais_hybrid" alt="">
+        <h1 style="position: absolute;top: 10;">This is About Section</h1>
+    </div>
+
+   
+
+    <div class="services">
+         
+        <div class="servone">
+            <h1>this is services</h1>
+        </div>
+        <div class="servone">
+            <h1>this is services</h1>
+        </div>
+        <div class="servone">
+            <h1>this is services</h1>
+        </div>
+    </div>
+    <div id="contact" >
+        <div class="contactmain">
+            <div class="child">hello</div>
+        </div>
+    </div>
+
+</body>
+</html>

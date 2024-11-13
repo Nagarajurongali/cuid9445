@@ -1,0 +1,21 @@
+#header{
+    background-color: black;
+    color: #ffffff;
+}
+#header ul{
+    list-style-type: none;
+    display: flex;
+}
+#header ul a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1%;
+}
+#header ul a:hover{
+    background-color: #B197FC;
+    color: bisque;
+}
+.active{
+    background-color: #B197FC;
+    color: bisque;
+}
