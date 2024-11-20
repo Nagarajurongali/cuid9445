@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
 </head>
-
 <body>
-    <p>
-        Dummy Content is a Joomla! system plugin (and editor button) that helps you automatically place random dummy
-        text into your Articles - or<span id="content" style="display: none;"> in any other content item that has an editor, such as Custom HTML Modules, Category
-        descriptions, 3rd party</span>
-        <p onclick="show()">Learn More</p>
-    </p>
+   
     <script>
-        function show(){
-            document.getElementById("content").style.display="block"
-            document.getElementById("content").style.backgroundColor="green"
-        }
+        let x = +prompt("enter first value")
+        let y = +prompt("enter first value")
+
+        const res = x === y
+
+        alert( res )
     </script>
 </body>
-
 </html>
