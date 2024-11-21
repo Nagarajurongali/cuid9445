@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-   
     <script>
-        let x = +prompt("enter first value")
-        let y = +prompt("enter first value")
+        let age = +prompt()
+        let dob = +prompt()
 
-        const res = x === y
+        const res = age >=18 && dob <= 2006;
 
-        alert( res )
+        const year = new Date().getFullYear()
+        console.log(year)
+
+        const fnlRes = year-dob
+        console.log(fnlRes)
+
+        
+
+       
+
     </script>
 </body>
+
 </html>
