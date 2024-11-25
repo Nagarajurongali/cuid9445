@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>userName : test</p>
+    <p>acc Balance :<span id="usrBls"></span> </p>
+    <a href="debit.html">debit</a>
+
+    <script>
+        document.getElementById('usrBls').innerHTML = localStorage.getItem('currentBls')
+        
+    </script>
+</body>
+</html>
