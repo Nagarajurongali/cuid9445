@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="number" id="min" placeholder="enter min value" />
+        <input type="number" id="max" placeholder="enter max value" />
+        <input type="button" value="filter" name="" class="filter">
+    </form>
+
+    <div class="main">
+        <p class="card" data-value="300">300</p>
+        <p class="card" data-value="1000">1000</p>
+        <p class="card" data-value="400">400</p>
+        <p class="card" data-value="800">800</p>
+        <p class="card" data-value="600">600</p>
+        <p class="card" data-value="250">250</p>
+        <p class="card" data-value="900">900</p>
+    </div>
+
+    <script>
+        document.querySelectorAll('.card').forEach(function (ele) {
+            document.querySelector('.filter').addEventListener('click', function () {
+                let minVal = parseInt(document.getElementById('min').value);
+                let maxVal = parseInt(document.getElementById('max').value);
+
+                let dataItems = ele.getAttribute('data-value');
+
+                if(dataItems >= minVal && dataItems <= maxVal){
+                    ele.style.display="block"
+                }
+                else{
+                    ele.style.display="none"
+                }
+                
+            })
+        })
+
+    </script>
+</body>
+
+</html>
