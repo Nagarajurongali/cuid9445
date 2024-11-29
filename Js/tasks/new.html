@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card" style="background-color: rgb(215, 250, 221);padding: 2%;width: 200px;">
+        <p>Brand : boAt</p>
+        <p>Colour : Black</p>
+        <p>Price : 5000</p>
+        <button id="cart">add to cart</button>
+    </div>
+
+    <script>
+        document.getElementById('cart').addEventListener('click' , function(){
+           let product = document.getElementsByTagName('p').innerText;
+
+           product.map(e=>{
+            let data = e.innerText;
+            console.log(data)
+           })
+           console.log(product)
+        })
+    </script>
+</body>
+</html>
